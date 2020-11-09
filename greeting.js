@@ -25,7 +25,6 @@ function paintGreeting(text) {
     form.classList.remove(SHOWING);
     greeting.classList.add(SHOWING);
     greeting.innerText = `Hello ${text}`;
-    /* 이름 수정하는 버튼 만들어보기 */
 }
 
 function loadName() {
