@@ -34,7 +34,7 @@ To solve this, I added a color picker so that user can change text's color.
 ![color picker](https://user-images.githubusercontent.com/41367134/98555829-bd142000-22e5-11eb-81e3-8be49acadb98.PNG)
 
 ### 4. TODO
-[todo.js](todo.js)
+[todo.js](todo.js)  
 By writing todos, it saves your input in local storage.  
 By clicking delete button, it disappears on screen and also on local storage.  
 ![create and delete todo](https://user-images.githubusercontent.com/41367134/98675071-19864680-239d-11eb-8147-d5633b808fb3.gif)
