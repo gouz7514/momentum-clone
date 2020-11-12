@@ -3,7 +3,7 @@
     --size-border-radius: 8px;
 }
 body {
-    background-image: url("https://images.unsplash.com/photo-1604390602659-772f5ff37579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80");
+    /* background-image: url("https://images.unsplash.com/photo-1604390602659-772f5ff37579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"); */
 }
 .shortcut-wrapper {
     display: flex;
