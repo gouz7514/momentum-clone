@@ -38,3 +38,7 @@ To solve this, I added a color picker so that user can change text's color.
 By writing todos, it saves your input in local storage.  
 By clicking delete button, it disappears on screen and also on local storage.  
 ![create and delete todo](https://user-images.githubusercontent.com/41367134/98675071-19864680-239d-11eb-8147-d5633b808fb3.gif)
+
+### 5. Modal
+[modal.js](modal.js)  
+![modal](https://user-images.githubusercontent.com/41367134/98914654-43aa4680-250c-11eb-9c5f-c32b775b0451.gif)
