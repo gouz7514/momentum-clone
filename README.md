@@ -41,4 +41,5 @@ By clicking delete button, it disappears on screen and also on local storage.
 
 ### 5. Modal
 [modal.js](modal.js)  
+**Refactoring ongoing**
 ![modal](https://user-images.githubusercontent.com/41367134/98914654-43aa4680-250c-11eb-9c5f-c32b775b0451.gif)
