@@ -27,11 +27,10 @@ And by add and remove classList, it shows user's name.
 ![ask name](https://user-images.githubusercontent.com/41367134/98675333-75e96600-239d-11eb-9651-268877c9a1f6.gif)
 
 
-### 3.Text Color Change  
+### 3.Text Color Changer  
 [color.js](color.js)  
 While setting various image as background image, there was a problem that text was hard to read when text color is same with background color.  
 To solve this, I added a color picker so that user can change text's color.  
-![color picker](https://user-images.githubusercontent.com/41367134/98555829-bd142000-22e5-11eb-81e3-8be49acadb98.PNG)
 
 ### 4. TODO
 [todo.js](todo.js)  
@@ -41,5 +40,4 @@ By clicking delete button, it disappears on screen and also on local storage.
 
 ### 5. Modal
 [modal.js](modal.js)  
-**Refactoring ongoing**
-![modal](https://user-images.githubusercontent.com/41367134/98914654-43aa4680-250c-11eb-9c5f-c32b775b0451.gif)
+![modal](https://user-images.githubusercontent.com/41367134/99140612-afb0ba00-2686-11eb-9280-fa4a2590867c.gif)
