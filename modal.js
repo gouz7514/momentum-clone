@@ -1,26 +1,26 @@
-var myModal = document.querySelector("#myModal");
-// myModal.classList.add("hideModal");
+const modal = document.querySelector('dialog');
+const btnOpen = document.querySelector('button');
+const btnClose = document.querySelector('.close');
 
-var modalBtn = document.getElementById("myBtn");
-var closeBtn = document.getElementsByClassName("close")[0];
+btnOpen.addEventListener('click', () => openModal());
+// btnClose.forEach((elm) => elm.addEventListener('click', () => closeModal()));
+btnClose.addEventListener('click', () => closeModal());
+modal.addEventListener('click', (e) => detectBackdropClick(e));
 
-closeBtn.addEventListener('click', closeModal); 
-modalBtn.addEventListener('click', openModal);
-
-function openModal() {
-    // myModal.classList.remove("hideModal");
-    // myModal.classList.add("showModal");
-    myModal.style.display = "block";
+openModal = () => {
+    modal.showModal();
 }
-
-function closeModal() {
-    // myModal.classList.remove("showModal");
-    // myModal.classList.add("hideModal");
-    myModal.style.display = "none";
+closeModal = () => {
+    modal.classList.add("dialog__animate-out");
+    modal.addEventListener('animationend', handleClose, false);
 }
-
-window.onclick = function(event) {
-    if (event.target == myModal) {
-        myModal.style.display = "none";
+handleClose = () => {
+    modal.classList.remove("dialog__animate-out");
+    modal.removeEventListener('animationend', handleClose, false);
+    modal.close();
+}
+detectBackdropClick = (event) => {
+    if (event.target === modal) {
+        closeModal();
     }
 }

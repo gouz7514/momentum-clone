@@ -9,14 +9,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     </head>
     <body>
-      <button id="myBtn" class="myBtn"><i class="far fa-question-circle fa-2x"></i></button>
-      <div id="myModal" class="modal">
-        <div class="modal-container">
-          <div class="close">&times;</div>
-          <div class="modal-content">Click <a href="https://github.com/gouz7514/momentum-clone">here</a> to see how this is made of!<br>
-          Made by KHJ</div>
+      <button class="button button-open">What is this?</button>
+      <dialog>
+        <div class="dialog__inner">
+          <div class="dialog__content">
+            <h3>Clone practice of momentum</h3>
+            <p>Click <a href="https://github.com/gouz7514/momentum-clone">here</a> for more details!</p>
+            <footer class="dialog__footer">
+              <button class="button close">Okay!</button>
+            </footer>	
+          </div>	
         </div>
-      </div>
+      </dialog>
 
       <div class="shortcut-wrapper">
           <div class="shortcut-link">

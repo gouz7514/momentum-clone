@@ -1,96 +1,81 @@
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-.modal-container {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
+.button {
+	border: none;
+	background-color: #afb8c9;
+	padding: 10px 10px;
+	border-radius: 10px;
+	font-size: 15px;
+	color: #fff;
+	box-shadow: 0 10px 25px #3c4a5645;
+	outline: none;
+	cursor: pointer;
+}
+h3 {
+    font-size: 18px;
+    margin-top: 0;
+	margin-bottom: 15px;
+}
+p{
+	font-size: 16px;
+}
+.button-open:hover {
+    transition: scale(1.1);
+}
+.button-close {
+	padding: 10px;
+	align-self: flex-end; 
+	background-color: transparent;
+	box-shadow: none;
+	color: #838282;
+}
+
+dialog {
+	padding: 0;
+	border: none;
+	border-radius: 10px;
+	animation: appear .8s cubic-bezier(.77,0,.175,1) forwards;
+	box-shadow: 0 25px 40px -20px #3c4a56;
+}
+
+.dialog__animate-out{
+	animation: dissappear .5s cubic-bezier(.77,0,.175,1) forwards;
+}
+.dialog__inner {
+	display: flex;
+	flex-direction: column;
+	color: #838282;
+}
+.dialog__close-btn {
+	align-self: flex-end;
+}
+.dialog__content {
     padding: 20px;
-    border-radius: 4px;
-    border: 1px solid #888;
-    width: 30%; /* Could be more or less, depending on screen size */
-    height: 50px;
     text-align: center;
-    /* display: flex;
-    flex-direction: row-reverse;
-    align-items: center; */
 }
-.myBtn {
-    opacity: 0.5;
-}
-.myBtn:hover {
-    opacity: 1;
-}
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    /* display: inline; */
-}
-  
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+.dialog__footer{
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-/* .hideModal {
-    z-index: -1;
-    opacity: 0;
-    animation: hide .25s;
-    transform: scale(0);
-}@keyframes hide {
-    from {
-          z-index: 2;
-          transform: scale(1);
-          opacity: 1;
-    } to {
-          z-index: -1;
-          transform: scale(0);
-          opacity: 0;
-    }
-} */
-
-/* .showModal {
-    opacity: 1;
-    z-index: 2;
-    animation: show .25s;
-    transform: scale(1);
-}@keyframes show {
-    from {
-        transform: scale(0);
-        opacity: 0;
-        z-index: -1;
-    } to {
-        transform: scale(1);
-        opacity: 1;
-        z-index: 2;
-    }
-} */
-  
-  /* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+@keyframes appear {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
-  
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+
+@keyframes dissappear {
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(20px);
+	}
 }
