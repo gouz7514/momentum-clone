@@ -24,7 +24,6 @@ function getTime() {
 [greeting.js](greeting.js)  
 It asks user's name and saves it in local storage.  
 And by add and remove classList, it shows user's name.  
-![ask name](https://user-images.githubusercontent.com/41367134/98675333-75e96600-239d-11eb-9651-268877c9a1f6.gif)
 
 
 ### 3.Text Color Changer  
@@ -36,8 +35,7 @@ To solve this, I added a color picker so that user can change text's color.
 [todo.js](todo.js)  
 By writing todos, it saves your input in local storage.  
 By clicking delete button, it disappears on screen and also on local storage.  
-![create and delete todo](https://user-images.githubusercontent.com/41367134/98675071-19864680-239d-11eb-8147-d5633b808fb3.gif)
+
 
 ### 5. Modal
 [modal.js](modal.js)  
-![modal](https://user-images.githubusercontent.com/41367134/99140612-afb0ba00-2686-11eb-9280-fa4a2590867c.gif)
