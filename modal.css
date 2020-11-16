@@ -12,6 +12,9 @@
     overflow: hidden;
     transition: all 0.5s;
 }
+#whatBtn {
+	background-color: transparent;
+}
 .button span {
     cursor: pointer;
     display: inline-block;

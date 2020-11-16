@@ -3,6 +3,9 @@
     --size-border-radius: 8px;
     --img-url : "https://images.unsplash.com/photo-1604390602659-772f5ff37579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80";
 }
+::-webkit-input-placeholder {
+    text-align: center;
+ }
 .bgImage {
     position: absolute;
     top: 0;
@@ -57,6 +60,9 @@ input {
 .js-toDoList {
     font-size: 20px;
     font-weight: bold;
+}
+.js-toDoForm input {
+    text-align: center;
 }
 .span-todo {
     margin-right: 10px;
