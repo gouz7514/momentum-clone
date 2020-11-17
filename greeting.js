@@ -1,6 +1,7 @@
 const form = document.querySelector(".js-form");
 const input = form.querySelector("input");
 const greeting = document.querySelector(".js-greetings");
+const changeBtn = document.querySelector(".changeBtn");
 
 const USER_LS = "currentUser";
 const SHOWING = "showing";
@@ -21,6 +22,23 @@ function askForName() {
     form.addEventListener('submit', handleSubmit);
 }
 
+changeBtn.addEventListener('click', changeName);
+
+function checkName() {
+    if (localStorage.getItem(USER_LS) === "") {
+        changeBtn.classList.add("none");
+    } else {
+        changeBtn.classList.remove("none");
+    }
+}
+
+
+function changeName() {
+    localStorage.setItem(USER_LS, "");
+    form.classList.add(SHOWING);
+    greeting.innerText = "";
+}
+
 function paintGreeting(text) {
     form.classList.remove(SHOWING);
     greeting.classList.add(SHOWING);
@@ -38,6 +56,7 @@ function loadName() {
 
 function init() {
     loadName();
+    setInterval(checkName, 1000);
 }
 
 init();

@@ -51,11 +51,17 @@ input {
     display: none;
     font-size: 30px;
 }
+.form input {
+    text-align: center;
+}
 .showing {
     display: block;
 }
 .js-greetings {
-    display: inline;
+    display: block;
+}
+.none {
+    display: none;
 }
 .js-toDoList {
     font-size: 20px;
