@@ -8,31 +8,35 @@
         <link rel="stylesheet" href="modal.css">
     </head>
     <body>
-      <button class="button" id="whatBtn"><span>❓</span></button>
-      <dialog>
-        <div class="dialog__inner">
-          <div class="dialog__content">
-            <h3>Clone practice of momentum</h3>
-            <p>Click <a href="https://github.com/gouz7514/momentum-clone" target="_blank">here</a> for more details!</p>
-            <footer class="dialog__footer">
-              <button class="button close">Okay!</button>
-            </footer>	
-          </div>	
-        </div>
-      </dialog>
-
-      <span class="shortcut-wrapper">
-          <span class="shortcut-link">
-          <a href="https://velog.io/@gouz7514">
-            <img src="https://pbs.twimg.com/profile_images/1228368893321736193/Ov0og7E8_400x400.jpg" alt="my velog page" width="40" height="40">
-          </a>
-          </span>
-          <span class="shortcut-link">
-          <a href="https://github.com/gouz7514">
-            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="my github page" width="40" height="40">
-          </a>
+      <header>
+        <span class="button-header">
+          <button class="button" id="whatBtn"><span>❓</span></button>
+          <dialog>
+            <div class="dialog__inner">
+              <div class="dialog__content">
+                <h3>Clone practice of momentum</h3>
+                <p>Click <a href="https://github.com/gouz7514/momentum-clone" target="_blank">here</a> for more details!</p>
+                <footer class="dialog__footer">
+                  <button class="button close">Okay!</button>
+                </footer>	
+              </div>	
+            </div>
+          </dialog>
         </span>
-      </span>
+
+        <span class="shortcut-wrapper">
+            <span class="shortcut-link">
+            <a href="https://velog.io/@gouz7514">
+              <img src="https://pbs.twimg.com/profile_images/1228368893321736193/Ov0og7E8_400x400.jpg" alt="my velog page" width="40" height="40">
+            </a>
+            </span>
+            <span class="shortcut-link">
+            <a href="https://github.com/gouz7514">
+              <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="my github page" width="40" height="40">
+            </a>
+          </span>
+        </span>
+      </header>
 
       <div class="momentum">
         <div class="controls">
@@ -43,9 +47,10 @@
             <h1>00:00</h1>
           </div>
           <form class="js-form form">
-            <input type="text" placeholder="What is your name" />
+            <input class="js-form ask-name" type="text" placeholder="What is your name" />
           </form>
-          <h3 class="js-greetings greetings"></h3><button class="changeBtn">Not me!</button>
+          <h3 class="js-greetings greetings"></h3>
+          <button class="changeBtn">Not me!</button>
           <form class="js-toDoForm">
             <input type="text" placeholder="Write todo" />
           </form>
