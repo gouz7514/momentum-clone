@@ -1,4 +1,7 @@
 # momentum-clone
+
+## 현재 반응형 웹 디자인 진행중
+
 ## About
 This repositiory is a clone coding practice of [momentumdash](https://momentumdash.com/ "momentumdash link")  
 referred site : [노마드 코더 - 바닐라 JS로 크롬 앱 만들기](https://nomadcoders.co/javascript-for-beginners/lobby "nomad coder JS practice")  
